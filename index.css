@@ -1,0 +1,247 @@
+/*base style all elements of all the pages*/
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*style the body of all the pages*/
+body {
+    background-color: rgb(19, 19, 19);
+    max-width: 50rem;
+    margin: auto;
+    width: 80%;
+    max-width: 80%;
+}
+
+header {
+    border-radius: 1rem;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    width: 100%;
+    border-style: dashed;
+    border-color: rgba(240, 248, 255, 0.387);
+    border-width: 0.2rem;
+    color: aliceblue;
+}
+
+header nav {
+    padding-left: 1rem;
+    width: 30%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    line-height: 1.5rem;
+}
+
+/* unvisited link */
+header nav li a:link {
+    color: rgb(65, 87, 255);
+}
+
+/* visited link */
+header nav li a:visited {
+    color: rgb(65, 87, 255);
+}
+
+/* mouse over link */
+header nav li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* selected link */
+header nav li a:active {
+    color: rgb(65, 87, 255);
+}
+
+header h1 {
+    font-size: 5rem;
+    text-align: center;
+    width: 80%;
+}
+
+.icon-viewer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.list-viewer {
+    width: 90%;
+    max-width: 50rem;
+    margin: auto;
+    border-radius: 1rem;
+    padding-top: 0rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.list-viewer h1 {
+    color: white;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.list-viewer p {
+    color: rgb(152, 148, 148);
+    font-style: italic;
+}
+
+/* unvisited link */
+.list-viewer a:link {
+    color: rgb(97, 184, 91);
+}
+
+/* visited link */
+.list-viewer a:visited {
+    color: rgb(97, 184, 91);
+}
+
+/* mouse over link */
+.list-viewer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* selected link */
+.list-viewer a:active {
+    color: rgb(97, 184, 91);
+}
+
+.list-viewer ul {
+    color: white;
+    line-height: 1.5rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.list-viewer ol {
+    color: white;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+}
+
+/* unvisited link */
+.list-viewer ul li a:link {
+    color: rgb(167, 102, 193);
+}
+
+/* visited link */
+.list-viewer ul li a:visited {
+    color: rgb(167, 102, 193);
+}
+
+/* mouse over link */
+.list-viewer ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* selected link */
+.list-viewer ul li a:active {
+    color: rgb(167, 102, 193);
+}
+
+.icon-viewer div {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.icon-viewer div a {
+    text-decoration: none;
+}
+
+.icon-viewer div img {
+    border-radius: 1rem;
+    width: 10rem;
+    max-width: 10rem;
+}
+
+.icon-viewer div p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(144, 0, 0);
+    border-radius: 1rem;
+    padding: .2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*adding responsiveness to website when using a smaller screen*/
+@media screen and (max-width: 770px) {
+    body {
+        max-width: 100%;
+        width: 100%
+    }
+
+    header {
+        border-radius: 1rem;
+        max-width: 95%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        border-style: dashed;
+        border-color: rgba(240, 248, 255, 0.387);
+        border-width: 0.2rem;
+        color: aliceblue;
+        width: 95%;
+    }
+
+    header nav {
+        padding-left: 0rem;
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        text-align: center;
+        width: 50%;
+    }
+
+    .icon-viewer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .icon-viewer div {
+        text-align: center;
+        margin-bottom: 0rem;
+        border-radius: 1rem;
+    }
+
+    .icon-viewer div img {
+        border-radius: 1rem;
+        width: 8.5rem;
+        max-width: 8.5rem;
+    }
+
+    .icon-viewer div p {
+        padding: .2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+}
